@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .footer {
+
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 4vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+</head>
+<body class="w3-content w3-black" style=" max-width:1500px;">
+    <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px; height: 8vh; display: flex;align-items: center;margin-left: 2%;">
+    <span id="mylogo">Logo</span>
+        <div class="w3-display-middle" style="width:65%">
+
+      
+          <!-- Tabs -->
+  
+       
+  
+        </div>
+      </header>
+      
+<!-- Header with Slideshow -->
+<!-- <header class="w3-display-container w3-center"> -->
+    <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+    <div class="mySlides w3-animate-opacity">
+        <div style="width: 100%; height: 20vh">
+            <!-- <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a> -->
+
+    <img class="w3-image" src="https://cdn.pixabay.com/photo/2017/07/08/10/19/halftone-2484003_1280.jpg" alt="Image 1" style="width: 100%; height: 92vh;" >
+</div>
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%; top:60vh;left: 10vh; background-color: black;">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge" style="text-align: center;">Download your favaourite application.</h1>
+        <hr class="w3-opacity">
+        <p>Super simple installment: free of charge</p>
+        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </div>
+<!-- </header> -->
+
+<!-- The App Section -->
+<!-- <div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Download Application
+      </button>
+      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="https://media.istockphoto.com/id/1441385019/photo/chat-bubble-with-envelope-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=HZ4nJNoMRfl0y8RB-iIgBpQ6dBR7atqJ_qDtC_T4wbU=" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="https://media.istockphoto.com/id/1441385019/photo/chat-bubble-with-envelope-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=HZ4nJNoMRfl0y8RB-iIgBpQ6dBR7atqJ_qDtC_T4wbU=" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">DOWNLOAD</h2>
+      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
+    </div>
+  </div>
+</div>
+
+ 
+
+<!-- Pricing Section -->
+
+
+<!-- Footer -->
+<footer class="w3-container  w3-xlarge footer" style="background-color: transparent; bottom: 0;">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var currentUrl = window.location.href;
+
+// Creating a URL object
+var url = new URL(currentUrl);
+
+// Getting the value of param1
+var param1Value = url.searchParams.get("param1");
+var myLogoElement = document.getElementById("mylogo");
+  if (myLogoElement && param1Value !== null && param1Value!='') {
+    myLogoElement.textContent = param1Value;
+  }
+</script>
+
+</body>
+</html>

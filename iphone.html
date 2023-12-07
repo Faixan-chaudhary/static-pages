@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://images.pexels.com/photos/1291515/pexels-photo-1291515.jpeg?auto=compress&cs=tinysrgb&w=2200');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div id="mylogo" class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+      <p class="w3-large w3-center">Downlaod Your Favaourites From Here.</p>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p><a href="#work" style="display: flex;justify-content: center;" class="w3-button w3-black"><i class="fa fa-th"> </i> Download Now</a></p>
+  </div>
+  
+</div>
+
+</body>
+<script>
+var currentUrl = window.location.href;
+
+// Creating a URL object
+var url = new URL(currentUrl);
+
+// Getting the value of param1
+var param1Value = url.searchParams.get("param1");
+var myLogoElement = document.getElementById("mylogo");
+  if (myLogoElement && param1Value !== null && param1Value!='') {
+    myLogoElement.textContent = param1Value;
+  }
+
+</script>
+</html>
